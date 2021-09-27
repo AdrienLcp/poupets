@@ -1,0 +1,16 @@
+@use '../../styles/vars';
+
+.videos {
+  margin-top: 20em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 20em;
+  padding-right: 20em;
+
+  &-item {
+    margin: 1em;
+    border-radius: 10px;
+  }
+}
