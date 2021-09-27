@@ -35,3 +35,25 @@
     }
   }
 }
+
+@media screen and (max-height: 1000px) and (min-width: 850px) {
+  .home {
+    margin-top: 20vh;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .home {
+    &-container {
+      padding: 1em;
+
+      &-button {
+        margin: 0.5em;
+        
+        &-img {
+          height: 2em;
+        }
+      }
+    }
+  }
+}

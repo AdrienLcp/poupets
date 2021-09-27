@@ -1,7 +1,7 @@
 @use '../../styles/vars';
 
 .nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100vw;
   background-color: vars.$white;
@@ -46,4 +46,24 @@
 
 .navActive {
   border-bottom: 2px solid rgb(178, 39, 206);
+}
+
+@media screen and (max-width: 850px) {
+  .nav {
+    height: auto;
+    padding: 0;
+
+    &-title, &-subtitle {
+      display: none;
+    }
+
+    &-buttons {
+      width: 100vw;
+      justify-content: space-evenly;
+
+      &-item {
+        margin: 0;
+      }
+    }
+  }
 }
