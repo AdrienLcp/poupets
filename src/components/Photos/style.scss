@@ -36,9 +36,13 @@
   .photos {
     margin-top: 10vh;
 
-  &-item-img {
+    &-item-img {
       width: 80vw;
       height: auto;
+
+      &:hover {
+        transform: scale(1);
+      }
     }
   }
 }
