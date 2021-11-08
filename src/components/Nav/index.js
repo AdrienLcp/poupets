@@ -6,6 +6,7 @@ import './style.scss';
 import home from '../../media/nav/home.svg';
 import photo from '../../media/nav/img.svg';
 import video from '../../media/nav/video.svg';
+import contact from '../../media/nav/contact.svg';
 
 const Nav = () => {
 
@@ -53,6 +54,19 @@ const Nav = () => {
             src={video}
           />
           <p className="nav-buttons-item-text">Vidéos</p>
+        </NavLink>
+
+        <NavLink
+          exact to='/contact'
+          className="nav-buttons-item"
+          activeClassName="navActive"
+        >
+          <img
+            className="nav-buttons-item-img"
+            alt="Lien vers la page de contact"
+            src={contact}
+          />
+          <p className="nav-buttons-item-text">Contact</p>
         </NavLink>
       </nav>
     </section>

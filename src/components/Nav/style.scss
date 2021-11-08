@@ -30,15 +30,29 @@
       align-items: center;
       margin: 2em;
       padding: 0.5em;
+      position: relative;
 
       &-img {
         height: 1.5em;
         margin-bottom: 0.5em;
       }
 
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        border: 2px solid transparent;
+      }
+
       &:hover {
         transform: scale(0.95);
         transition: .2s;
+
+        &:after {
+          animation: hover .3s linear forwards;
+          z-index: -1;
+        }
       }
     }
   }
@@ -65,5 +79,16 @@
         margin: 0;
       }
     }
+  }
+}
+
+@keyframes hover {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+    border-bottom-color: rgb(224, 39, 153);
   }
 }
