@@ -1,25 +1,43 @@
 @use '../../styles/vars';
 
 .photos {
-  margin-top: 20em;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  padding-left: 20em;
-  padding-right: 20em;
-  margin-bottom: 20em;
+  padding: 20em;
 
-  &-item {
-    margin: 1em;
+  &-cats {
+    text-align: center;
 
-    &-img {
+    &-button {
+      padding: 0.5em;
+      font-size: 1.5em;
+      margin: 1em;
+      margin-bottom: 2em;
+      border: none;
       border-radius: 5px;
-      height: 250px;
 
       &:hover {
-        transform: scale(2.5);
-        transition: .3s;
+        transition: .2s;
+        transform: scale(0.95);
+      }
+    }
+  }
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &-item {
+      margin: 1em;
+
+      &-img {
+        border-radius: 5px;
+        height: 250px;
+
+        &:hover {
+          transform: scale(2.5);
+          transition: .3s;
+        }
       }
     }
   }
