@@ -4,6 +4,7 @@
   padding: 20em;
 
   &-cats {
+    z-index: 2;
     text-align: center;
 
     &-button {
@@ -45,22 +46,45 @@
 
 @media screen and (max-width: 1300px) {
   .photos {
-    padding-left: 5em;
-    padding-right: 5em;
+    padding: 5em;
   }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1050px) {
   .photos {
-    margin-top: 10vh;
+    &-cats {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100vw;
+      background-color: vars.$white;
+      display: flex;
+      justify-content: space-evenly;
 
-    &-item-img {
-      width: 80vw;
-      height: auto;
-
-      &:hover {
-        transform: scale(1);
+      &-button {
+        font-size: 1em;
+        margin-bottom: 1em;
       }
     }
+  
+    &-list {
+      margin-top: 10vh;
+      z-index: 1;
+
+      &-item-img {
+        width: 80vw;
+        height: auto;
+
+        &:hover {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .photos-cats {
+    font-size: 0.8em;
   }
 }
