@@ -15,9 +15,13 @@
       border: none;
       border-radius: 5px;
 
-      &:hover {
-        transition: .2s;
-        transform: scale(0.95);
+      &:active {
+        transition: .1s;
+        transform: scale(0.8);
+      }
+
+      &-poupette:hover {
+        background-color: #00000085;
       }
     }
   }
@@ -57,13 +61,17 @@
       bottom: 0;
       left: 0;
       width: 100vw;
-      background-color: vars.$white;
+      background-color: rgb(37, 37, 37);
       display: flex;
       justify-content: space-evenly;
 
       &-button {
         font-size: 1em;
         margin-bottom: 1em;
+
+        &:hover {
+          transform: scale(1);
+        }
       }
     }
   

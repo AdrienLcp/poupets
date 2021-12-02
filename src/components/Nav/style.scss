@@ -11,6 +11,7 @@
   align-items: center;
   justify-content: center;
   padding: 1em;
+  z-index: 2;
 
   &-title {
     font-size: 2em;
@@ -46,13 +47,17 @@
       }
 
       &:hover {
-        transform: scale(0.95);
         transition: .2s;
 
         &:after {
           animation: hover .3s linear forwards;
           z-index: -1;
         }
+      }
+
+      &:active {
+        transition: .1s;
+        transform: scale(0.9);
       }
     }
   }
