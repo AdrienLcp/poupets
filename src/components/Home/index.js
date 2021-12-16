@@ -20,6 +20,9 @@ const Home = () => {
             alt="Lien vers la page d'accueil"
             src={photo}
           />
+          <span className="home-container-button-text">
+            Photos
+          </span>
         </NavLink>
 
         <NavLink
@@ -31,6 +34,9 @@ const Home = () => {
             alt="Lien vers la page d'accueil"
             src={video}
           />
+          <span className="home-container-button-text">
+            Vidéos
+          </span>
         </NavLink>
       </section>
     </div>
